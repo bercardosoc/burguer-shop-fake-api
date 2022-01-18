@@ -6,6 +6,60 @@
       "name": "Kenzinho",
       "age": 38,
       "id": 1
+    },
+    {
+      "email": "barry@mail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "dean@mail.com",
+      "password": "123456",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Cheese Burger",
+      "category": "Sandwiches",
+      "price": 10,
+      "img": "https://i.ibb.co/fpVHnZL/hamburguer.png"
+    },
+    {
+      "id": 2,
+      "name": "X-Salad",
+      "category": "Sandwiches",
+      "price": 10,
+      "img": "https://i.ibb.co/djbw6LV/x-burgue.png"
+    },
+    {
+      "id": 3,
+      "name": "Double Burger",
+      "category": "Sandwiches",
+      "price": 10,
+      "img": "https://i.ibb.co/FYBKCwn/big-kenzie.png"
+    },
+    {
+      "id": 4,
+      "name": "Soda",
+      "category": "Drinks",
+      "price": 5,
+      "img": "https://i.ibb.co/cCjqmPM/fanta-guarana.png"
+    },
+    {
+      "id": 5,
+      "name": "Coke",
+      "category": "Drinks",
+      "price": 5,
+      "img": "https://i.ibb.co/fxCGP7k/coca-cola.png"
+    },
+    {
+      "id": 6,
+      "name": "Milkshake",
+      "category": "Ice Cream",
+      "price": 5,
+      "img": "https://i.ibb.co/QNb3DJJ/milkshake-ovomaltine.png"
     }
   ]
 }

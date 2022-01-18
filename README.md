@@ -1,24 +1,48 @@
-# json-server-base
 
-Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Capstones do Q2.
+# Beers & Burgers API 
+
+This fake API made with JSON Server works on a burger shop application containing user's data and catalog's data.
 
 ## Endpoints
 
-Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/package/json-server-auth), existem 3 endpoints que podem ser utilizados para cadastro e 2 endpoints que podem ser usados para login.
+This API contains endpoints to register and login a user, display users, catalog, and register cart choices.
 
-### Cadastro
+### SignUp 
 
-POST /register <br/>
-POST /signup <br/>
-POST /users
+This endpoint registers a new user and sends its data to "Users". Its required field is "email" and "password".
 
-Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
-Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
+`POST /users - Request format `
 
+```json
+{
+    "email": "barry@mail.com",
+    "password": "123456"
+}
+```
+`POST /users - Request response - 201 Created `
 
-### Login
+```json
+{
+  "email": "barry@mail.com",
+  "password": "123456",
+  "id": 2
+}
+```
+### SignIn
 
-POST /login <br/>
-POST /signin
-
-Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+`POST /login - Request format ` 
+```json
+{
+	"email": "jondoe@gmail.com",
+	"password": "987654321"
+}
+```
+`POST /login - Request response - 200 OK `
+```json
+{
+  "user": {
+    "email": "jondoe@gmail.com",
+    "id": 2
+  }
+}
+```

@@ -11,7 +11,7 @@ app.db = router.db;
 const rules = auth.rewriter({
   "products": "444",
   "/users*": "/600/users$1",
-  "/itens*": "/600/itens$1"
+  "/itens*": "/660/itens$1"
 });
 
 app.use(cors());
